@@ -1,0 +1,9 @@
+name: PlayerNameColor
+version: @version@
+main: net.gigaclub.playernamecolor.Main
+api-version: 1.17
+authors: [ KevTVKevin ]
+description: A plugin to show coloured name in the player list and over the player.
+website: https://GigaClub.net
+depend: [Vault, PlaceholderAPI]
+prefix: PlayerNameColor
