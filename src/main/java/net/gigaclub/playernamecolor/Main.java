@@ -13,6 +13,10 @@ public final class Main extends JavaPlugin {
     @Getter
     private ScoreboardUtil scoreboardUtil;
 
+    public static Main getPlugin() {
+        return Main.getPlugin(Main.class);
+    }
+
     @Override
     public void onEnable() {
         // Plugin startup logic
@@ -40,10 +44,6 @@ public final class Main extends JavaPlugin {
         PluginManager pluginManager = getServer().getPluginManager();
         pluginManager.registerEvents(new JoinListener(), this);
         getPlugin().getLogger().log(Level.INFO, "Listener registered");
-    }
-
-    public static Main getPlugin() {
-        return Main.getPlugin(Main.class);
     }
 
 }

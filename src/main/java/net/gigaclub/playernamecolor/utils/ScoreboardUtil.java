@@ -2,7 +2,6 @@ package net.gigaclub.playernamecolor.utils;
 
 import lombok.Getter;
 import me.clip.placeholderapi.PlaceholderAPI;
-import net.gigaclub.playernamecolor.Main;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextColor;

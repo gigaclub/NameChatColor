@@ -5,16 +5,12 @@ plugins {
 }
 
 group = "net.gigaclub"
-version = "1.17.1.1.0.0"
+version = "1.18.1.1.0.0"
 
 apply(plugin = "java")
 
 group = project.group
 version = project.version
-
-configure<JavaPluginConvention> {
-    sourceCompatibility = JavaVersion.VERSION_16
-}
 
 repositories {
     mavenCentral()
@@ -33,12 +29,16 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT")
-    compileOnly("me.clip:placeholderapi:2.10.10")
-    compileOnly("org.jetbrains:annotations:22.0.0")
-    annotationProcessor("org.jetbrains:annotations:22.0.0")
+    compileOnly("io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT")
+    compileOnly("me.clip:placeholderapi:2.11.1")
+    compileOnly("org.jetbrains:annotations:23.0.0")
+    annotationProcessor("org.jetbrains:annotations:23.0.0")
     compileOnly("org.projectlombok:lombok:1.18.22")
     annotationProcessor("org.projectlombok:lombok:1.18.22")
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 }
 
 tasks {
